@@ -1,0 +1,104 @@
+{
+  "contractName": "ContractStorage",
+  "abi": [],
+  "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a723058204cf45f0320681543920334ac6b3f1bc974553b6df695dc3de895a23089cbdeb00029",
+  "deployedBytecode": "0x6060604052600080fd00a165627a7a723058204cf45f0320681543920334ac6b3f1bc974553b6df695dc3de895a23089cbdeb00029",
+  "sourceMap": "115:91:0:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "115:91:0:-;;;;;",
+  "source": "pragma solidity ^0.4.18;\r\n// a place to put constants and anything unsupported by the universal key:value storage\r\ncontract ContractStorage {\r\n    // all storage handled by universal storage in this case\r\n}",
+  "sourcePath": "D:\\task1\\EIP20\\contracts\\ContractStorage.sol",
+  "ast": {
+    "absolutePath": "/D/task1/EIP20/contracts/ContractStorage.sol",
+    "exportedSymbols": {
+      "ContractStorage": [
+        2
+      ]
+    },
+    "id": 3,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2,
+        "linearizedBaseContracts": [
+          2
+        ],
+        "name": "ContractStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 3,
+        "src": "115:91:0"
+      }
+    ],
+    "src": "0:206:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/task1/EIP20/contracts/ContractStorage.sol",
+    "exportedSymbols": {
+      "ContractStorage": [
+        2
+      ]
+    },
+    "id": 3,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2,
+        "linearizedBaseContracts": [
+          2
+        ],
+        "name": "ContractStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 3,
+        "src": "115:91:0"
+      }
+    ],
+    "src": "0:206:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x3944aab2ebffd71c2e9615e23ccd595b7da72de3",
+      "transactionHash": "0x4aaf3b0ee14247a7aacf486d5c21414e2a91e76ef3b95b10d826e4a5c6c35aec"
+    }
+  },
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-04-13T02:26:18.275Z"
+}

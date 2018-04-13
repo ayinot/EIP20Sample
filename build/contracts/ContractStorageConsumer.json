@@ -1,0 +1,417 @@
+{
+  "contractName": "ContractStorageConsumer",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "name": "lstorage_",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x60606040523415600e57600080fd5b60405160208060ac83398101604052808051906020019091905050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505060358060776000396000f3006060604052600080fd00a165627a7a7230582031abe0e681733dc575adec80624fb889ed93c3865d493d6208a86232eedd9a970029",
+  "deployedBytecode": "0x6060604052600080fd00a165627a7a7230582031abe0e681733dc575adec80624fb889ed93c3865d493d6208a86232eedd9a970029",
+  "sourceMap": "104:194:2:-;;;169:126;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;255:9;243;;:21;;;;;;;;;;;;;;;;;;169:126;104:194;;;;;;",
+  "deployedSourceMap": "104:194:2:-;;;;;",
+  "source": "pragma solidity ^0.4.18;\r\n\r\nimport \"./ContractStorage.sol\";\r\nimport \"./ContractStorageStateful.sol\";\r\n\r\ncontract ContractStorageConsumer is ContractStorageStateful {\r\n  function ContractStorageConsumer(ContractStorage lstorage_) public {\r\n    _lstorage = lstorage_; // 'l' for local storage\r\n  }\r\n}",
+  "sourcePath": "D:\\task1\\EIP20\\contracts\\ContractStorageConsumer.sol",
+  "ast": {
+    "absolutePath": "/D/task1/EIP20/contracts/ContractStorageConsumer.sol",
+    "exportedSymbols": {
+      "ContractStorageConsumer": [
+        67
+      ]
+    },
+    "id": 68,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 52,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "absolutePath": "/D/task1/EIP20/contracts/ContractStorage.sol",
+        "file": "./ContractStorage.sol",
+        "id": 53,
+        "nodeType": "ImportDirective",
+        "scope": 68,
+        "sourceUnit": 51,
+        "src": "28:31:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/task1/EIP20/contracts/ContractStorageStateful.sol",
+        "file": "./ContractStorageStateful.sol",
+        "id": 54,
+        "nodeType": "ImportDirective",
+        "scope": 68,
+        "sourceUnit": 74,
+        "src": "61:39:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": [],
+            "baseName": {
+              "contractScope": null,
+              "id": 55,
+              "name": "ContractStorageStateful",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 73,
+              "src": "140:23:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ContractStorageStateful_$73",
+                "typeString": "contract ContractStorageStateful"
+              }
+            },
+            "id": 56,
+            "nodeType": "InheritanceSpecifier",
+            "src": "140:23:2"
+          }
+        ],
+        "contractDependencies": [
+          73
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 67,
+        "linearizedBaseContracts": [
+          67,
+          73
+        ],
+        "name": "ContractStorageConsumer",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 65,
+              "nodeType": "Block",
+              "src": "236:59:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 63,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 61,
+                      "name": "_lstorage",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 72,
+                      "src": "243:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ContractStorage_$50",
+                        "typeString": "contract ContractStorage"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 62,
+                      "name": "lstorage_",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 58,
+                      "src": "255:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ContractStorage_$50",
+                        "typeString": "contract ContractStorage"
+                      }
+                    },
+                    "src": "243:21:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ContractStorage_$50",
+                      "typeString": "contract ContractStorage"
+                    }
+                  },
+                  "id": 64,
+                  "nodeType": "ExpressionStatement",
+                  "src": "243:21:2"
+                }
+              ]
+            },
+            "id": 66,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "ContractStorageConsumer",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 59,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 58,
+                  "name": "lstorage_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 66,
+                  "src": "202:25:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ContractStorage_$50",
+                    "typeString": "contract ContractStorage"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 57,
+                    "name": "ContractStorage",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 50,
+                    "src": "202:15:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ContractStorage_$50",
+                      "typeString": "contract ContractStorage"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "201:27:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 60,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "236:0:2"
+            },
+            "scope": 67,
+            "src": "169:126:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 68,
+        "src": "104:194:2"
+      }
+    ],
+    "src": "0:298:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/task1/EIP20/contracts/ContractStorageConsumer.sol",
+    "exportedSymbols": {
+      "ContractStorageConsumer": [
+        67
+      ]
+    },
+    "id": 68,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 52,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "absolutePath": "/D/task1/EIP20/contracts/ContractStorage.sol",
+        "file": "./ContractStorage.sol",
+        "id": 53,
+        "nodeType": "ImportDirective",
+        "scope": 68,
+        "sourceUnit": 51,
+        "src": "28:31:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/task1/EIP20/contracts/ContractStorageStateful.sol",
+        "file": "./ContractStorageStateful.sol",
+        "id": 54,
+        "nodeType": "ImportDirective",
+        "scope": 68,
+        "sourceUnit": 74,
+        "src": "61:39:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": [],
+            "baseName": {
+              "contractScope": null,
+              "id": 55,
+              "name": "ContractStorageStateful",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 73,
+              "src": "140:23:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ContractStorageStateful_$73",
+                "typeString": "contract ContractStorageStateful"
+              }
+            },
+            "id": 56,
+            "nodeType": "InheritanceSpecifier",
+            "src": "140:23:2"
+          }
+        ],
+        "contractDependencies": [
+          73
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 67,
+        "linearizedBaseContracts": [
+          67,
+          73
+        ],
+        "name": "ContractStorageConsumer",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 65,
+              "nodeType": "Block",
+              "src": "236:59:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 63,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 61,
+                      "name": "_lstorage",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 72,
+                      "src": "243:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ContractStorage_$50",
+                        "typeString": "contract ContractStorage"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 62,
+                      "name": "lstorage_",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 58,
+                      "src": "255:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ContractStorage_$50",
+                        "typeString": "contract ContractStorage"
+                      }
+                    },
+                    "src": "243:21:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ContractStorage_$50",
+                      "typeString": "contract ContractStorage"
+                    }
+                  },
+                  "id": 64,
+                  "nodeType": "ExpressionStatement",
+                  "src": "243:21:2"
+                }
+              ]
+            },
+            "id": 66,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "ContractStorageConsumer",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 59,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 58,
+                  "name": "lstorage_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 66,
+                  "src": "202:25:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ContractStorage_$50",
+                    "typeString": "contract ContractStorage"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 57,
+                    "name": "ContractStorage",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 50,
+                    "src": "202:15:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ContractStorage_$50",
+                      "typeString": "contract ContractStorage"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "201:27:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 60,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "236:0:2"
+            },
+            "scope": 67,
+            "src": "169:126:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 68,
+        "src": "104:194:2"
+      }
+    ],
+    "src": "0:298:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-04-12T11:26:28.708Z"
+}

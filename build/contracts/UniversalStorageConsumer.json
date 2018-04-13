@@ -1,0 +1,417 @@
+{
+  "contractName": "UniversalStorageConsumer",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "name": "ustorage_",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x60606040523415600e57600080fd5b60405160208060ac83398101604052808051906020019091905050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505060358060776000396000f3006060604052600080fd00a165627a7a723058203a5870ed3cbd72b47bcebd94c742db5bbfb6ef8f68d2c5935d904f7419f4fc4d0029",
+  "deployedBytecode": "0x6060604052600080fd00a165627a7a723058203a5870ed3cbd72b47bcebd94c742db5bbfb6ef8f68d2c5935d904f7419f4fc4d0029",
+  "sourceMap": "106:169:11:-;;;171:101;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;259:9;247;;:21;;;;;;;;;;;;;;;;;;171:101;106:169;;;;;;",
+  "deployedSourceMap": "106:169:11:-;;;;;",
+  "source": "pragma solidity ^0.4.18;\r\n\r\nimport \"./UniversalStorage.sol\";\r\nimport \"./UniversalStorageStateful.sol\";\r\n\r\ncontract UniversalStorageConsumer is UniversalStorageStateful {\r\nfunction UniversalStorageConsumer(UniversalStorage ustorage_) public {\r\n    _ustorage = ustorage_;\r\n}\r\n}",
+  "sourcePath": "D:\\task1\\EIP20\\contracts\\utils\\universal_storage\\UniversalStorageConsumer.sol",
+  "ast": {
+    "absolutePath": "/D/task1/EIP20/contracts/utils/universal_storage/UniversalStorageConsumer.sol",
+    "exportedSymbols": {
+      "UniversalStorageConsumer": [
+        1692
+      ]
+    },
+    "id": 1693,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1677,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:11"
+      },
+      {
+        "absolutePath": "/D/task1/EIP20/contracts/utils/universal_storage/UniversalStorage.sol",
+        "file": "./UniversalStorage.sol",
+        "id": 1678,
+        "nodeType": "ImportDirective",
+        "scope": 1693,
+        "sourceUnit": 1676,
+        "src": "28:32:11",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/task1/EIP20/contracts/utils/universal_storage/UniversalStorageStateful.sol",
+        "file": "./UniversalStorageStateful.sol",
+        "id": 1679,
+        "nodeType": "ImportDirective",
+        "scope": 1693,
+        "sourceUnit": 1699,
+        "src": "62:40:11",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": [],
+            "baseName": {
+              "contractScope": null,
+              "id": 1680,
+              "name": "UniversalStorageStateful",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1698,
+              "src": "143:24:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_UniversalStorageStateful_$1698",
+                "typeString": "contract UniversalStorageStateful"
+              }
+            },
+            "id": 1681,
+            "nodeType": "InheritanceSpecifier",
+            "src": "143:24:11"
+          }
+        ],
+        "contractDependencies": [
+          1698
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1692,
+        "linearizedBaseContracts": [
+          1692,
+          1698
+        ],
+        "name": "UniversalStorageConsumer",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 1690,
+              "nodeType": "Block",
+              "src": "240:32:11",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1688,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 1686,
+                      "name": "_ustorage",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1697,
+                      "src": "247:9:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_UniversalStorage_$1675",
+                        "typeString": "contract UniversalStorage"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 1687,
+                      "name": "ustorage_",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1683,
+                      "src": "259:9:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_UniversalStorage_$1675",
+                        "typeString": "contract UniversalStorage"
+                      }
+                    },
+                    "src": "247:21:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_UniversalStorage_$1675",
+                      "typeString": "contract UniversalStorage"
+                    }
+                  },
+                  "id": 1689,
+                  "nodeType": "ExpressionStatement",
+                  "src": "247:21:11"
+                }
+              ]
+            },
+            "id": 1691,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "UniversalStorageConsumer",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1684,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1683,
+                  "name": "ustorage_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1691,
+                  "src": "205:26:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_UniversalStorage_$1675",
+                    "typeString": "contract UniversalStorage"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 1682,
+                    "name": "UniversalStorage",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1675,
+                    "src": "205:16:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_UniversalStorage_$1675",
+                      "typeString": "contract UniversalStorage"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "204:28:11"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1685,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "240:0:11"
+            },
+            "scope": 1692,
+            "src": "171:101:11",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1693,
+        "src": "106:169:11"
+      }
+    ],
+    "src": "0:275:11"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/task1/EIP20/contracts/utils/universal_storage/UniversalStorageConsumer.sol",
+    "exportedSymbols": {
+      "UniversalStorageConsumer": [
+        1692
+      ]
+    },
+    "id": 1693,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1677,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:11"
+      },
+      {
+        "absolutePath": "/D/task1/EIP20/contracts/utils/universal_storage/UniversalStorage.sol",
+        "file": "./UniversalStorage.sol",
+        "id": 1678,
+        "nodeType": "ImportDirective",
+        "scope": 1693,
+        "sourceUnit": 1676,
+        "src": "28:32:11",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/task1/EIP20/contracts/utils/universal_storage/UniversalStorageStateful.sol",
+        "file": "./UniversalStorageStateful.sol",
+        "id": 1679,
+        "nodeType": "ImportDirective",
+        "scope": 1693,
+        "sourceUnit": 1699,
+        "src": "62:40:11",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": [],
+            "baseName": {
+              "contractScope": null,
+              "id": 1680,
+              "name": "UniversalStorageStateful",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1698,
+              "src": "143:24:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_UniversalStorageStateful_$1698",
+                "typeString": "contract UniversalStorageStateful"
+              }
+            },
+            "id": 1681,
+            "nodeType": "InheritanceSpecifier",
+            "src": "143:24:11"
+          }
+        ],
+        "contractDependencies": [
+          1698
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1692,
+        "linearizedBaseContracts": [
+          1692,
+          1698
+        ],
+        "name": "UniversalStorageConsumer",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 1690,
+              "nodeType": "Block",
+              "src": "240:32:11",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1688,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 1686,
+                      "name": "_ustorage",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1697,
+                      "src": "247:9:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_UniversalStorage_$1675",
+                        "typeString": "contract UniversalStorage"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 1687,
+                      "name": "ustorage_",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1683,
+                      "src": "259:9:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_UniversalStorage_$1675",
+                        "typeString": "contract UniversalStorage"
+                      }
+                    },
+                    "src": "247:21:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_UniversalStorage_$1675",
+                      "typeString": "contract UniversalStorage"
+                    }
+                  },
+                  "id": 1689,
+                  "nodeType": "ExpressionStatement",
+                  "src": "247:21:11"
+                }
+              ]
+            },
+            "id": 1691,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "UniversalStorageConsumer",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1684,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1683,
+                  "name": "ustorage_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1691,
+                  "src": "205:26:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_UniversalStorage_$1675",
+                    "typeString": "contract UniversalStorage"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 1682,
+                    "name": "UniversalStorage",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1675,
+                    "src": "205:16:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_UniversalStorage_$1675",
+                      "typeString": "contract UniversalStorage"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "204:28:11"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1685,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "240:0:11"
+            },
+            "scope": 1692,
+            "src": "171:101:11",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1693,
+        "src": "106:169:11"
+      }
+    ],
+    "src": "0:275:11"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-04-12T11:26:28.712Z"
+}
